@@ -9,7 +9,7 @@ use this library for things like:
 
     var a = new Date(2015, 5, 21, 14, 11);
     var b = new Date(2015, 5, 22, 16, 45);
-    var duration = iso8601duration(b - 1);
+    var duration = millisecondsToISO8601Duration.iso8601duration(b - 1);
 
 to set `duration` to `"P1DT2H34M"`.
 
