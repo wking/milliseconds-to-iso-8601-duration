@@ -1,0 +1,16 @@
+{
+	"name": "milliseconds-to-iso-8601-duration",
+	"description": "Convert millisecond durations to ISO 8601",
+	"keywords": [
+		"duration",
+		"iso-8601"
+	],
+	"version": "0.1.0",
+	"license": "MIT",
+	"main": "./milliseconds-to-iso-8601-duration.js",
+	"homepage": "https://github.com/wking/milliseconds-to-iso-8601-duration",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/wking/milliseconds-to-iso-8601-duration.git"
+	}
+}
