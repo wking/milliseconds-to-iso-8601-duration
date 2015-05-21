@@ -1,0 +1,18 @@
+{
+	"name": "milliseconds-to-iso-8601-duration",
+	"version": "0.1.0",
+	"main": "milliseconds-to-iso-8601-duration.js",
+	"description": "Convert millisecond durations to ISO 8601",
+	"homepage": "https://github.com/wking/milliseconds-to-iso-8601-duration",
+	"bugs": "https://github.com/wking/milliseconds-to-iso-8601-duration/issues",
+	"author": {
+		"name": "W. Trevor King <wking@tremily.us>",
+		"email": "wking@tremily.us",
+		"url": "http://blog.tremily.us/"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/wking/milliseconds-to-iso-8601-duration.git"
+	}
+}
