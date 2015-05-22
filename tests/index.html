@@ -21,6 +21,7 @@
 				assert.equal(iso8601duration(12345678), 'PT3H25M45.678S', '12345678');
 				assert.equal(iso8601duration(123456789), 'P1DT10H17M36.789S', '123456789');
 				assert.equal(iso8601duration(1234567890), 'P14DT6H56M7.890S', '1234567890');
+				assert.equal(iso8601duration(1.23), 'PT0.001S', '1.23');
 			});
 		</script>
 	</head>
