@@ -26,6 +26,10 @@
 			if (seconds || milliseconds) {
 				parts.push(seconds);
 				if (milliseconds) {
+					milliseconds = milliseconds.toString();
+					while (milliseconds.length < 3) {
+						milliseconds = '0' + milliseconds;
+					}
 					parts.push('.' + milliseconds);
 				}
 				parts.push('S');
