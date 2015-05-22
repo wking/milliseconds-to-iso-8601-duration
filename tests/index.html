@@ -22,6 +22,17 @@
 				assert.equal(iso8601duration(123456789), 'P1DT10H17M36.789S', '123456789');
 				assert.equal(iso8601duration(1234567890), 'P14DT6H56M7.890S', '1234567890');
 				assert.equal(iso8601duration(1.23), 'PT0.001S', '1.23');
+				assert.equal(iso8601duration(-0), 'P0D', '0');
+				assert.equal(iso8601duration(-1), 'P-1DT23H59M59.999S', '-1');
+				assert.equal(iso8601duration(-12), 'P-1DT23H59M59.988S', '-12');
+				assert.equal(iso8601duration(-123), 'P-1DT23H59M59.877S', '-123');
+				assert.equal(iso8601duration(-1234), 'P-1DT23H59M58.766S', '-1234');
+				assert.equal(iso8601duration(-12345), 'P-1DT23H59M47.655S', '-12345');
+				assert.equal(iso8601duration(-123456), 'P-1DT23H57M56.544S', '-123456');
+				assert.equal(iso8601duration(-1234567), 'P-1DT23H39M25.433S', '-1234567');
+				assert.equal(iso8601duration(-12345678), 'P-1DT20H34M14.322S', '-12345678');
+				assert.equal(iso8601duration(-123456789), 'P-2DT13H42M23.211S', '-123456789');
+				assert.equal(iso8601duration(-1234567890), 'P-15DT17H3M52.110S', '-1234567890');
 			});
 		</script>
 	</head>
