@@ -13,8 +13,25 @@ use this library for things like:
 
 to set `duration` to `"P1DT2H34M"`.
 
+Tests
+=====
+
+The test suite uses [QUnit][] via [Grunt][] and [grunt-contrib-qunit].
+Install the tools with [npm][]:
+
+    $ npm install -g grunt-cli
+    $ npm install
+
+And then run the tests with:
+
+    $ grunt
+
 [durations-1]: https://tools.ietf.org/html/rfc3339#page-13
 [durations-2]: http://en.wikipedia.org/wiki/ISO_8601#Durations
 [xsdurations]: https://github.com/revington/xsdurationjs
 [Date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 [subtraction]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Example:_Calculating_elapsed_time
+[QUnit]: http://qunitjs.com/
+[Grunt]: http://gruntjs.com/
+[grunt-contrib-qunit]: https://github.com/gruntjs/grunt-contrib-qunit
+[npm]: https://www.npmjs.com/

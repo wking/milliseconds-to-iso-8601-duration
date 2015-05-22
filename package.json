@@ -14,5 +14,10 @@
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/wking/milliseconds-to-iso-8601-duration.git"
+	},
+	"devDependencies": {
+		"grunt": "^0.4.5",
+		"grunt-contrib-qunit": "^0.7.0",
+		"qunitjs": "^1.18.0"
 	}
 }

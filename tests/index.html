@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Milliseconds to ISO 8601 duration</title>
+		<script src="../milliseconds-to-iso-8601-duration.js"></script>
+		<script src="../node_modules/qunitjs/qunit/qunit.js"></script>
+		<link rel="stylesheet" href="../node_modules/qunitjs/qunit/qunit.css" />
+		<script type="text/javascript">
+			QUnit.test('iso8601duration basics', function( assert ) {
+				var iso8601duration = millisecondsToISO8601Duration.iso8601duration;
+				assert.equal(iso8601duration(0), 'P0D', '0');
+				assert.equal(iso8601duration(1), 'PT0.001S', '1');
+				assert.equal(iso8601duration(12), 'PT0.012S', '12');
+				assert.equal(iso8601duration(123), 'PT0.123S', '123');
+				assert.equal(iso8601duration(1234), 'PT1.234S', '1234');
+				assert.equal(iso8601duration(12345), 'PT12.345S', '12345');
+				assert.equal(iso8601duration(123456), 'PT2M3.456S', '123456');
+				assert.equal(iso8601duration(1234567), 'PT20M34.567S', '1234567');
+				assert.equal(iso8601duration(12345678), 'PT3H25M45.678S', '12345678');
+				assert.equal(iso8601duration(123456789), 'P1DT10H17M36.789S', '123456789');
+				assert.equal(iso8601duration(1234567890), 'P14DT6H56M7.890S', '1234567890');
+			});
+		</script>
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
+	</body>
+</html>
