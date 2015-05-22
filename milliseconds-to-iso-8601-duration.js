@@ -2,6 +2,9 @@
 	'use strict';
 
 	millisecondsToISO8601Duration.iso8601duration = function(milliseconds) {
+		if (milliseconds == 0) {
+			return 'P0D';
+		}
 		var offset = Math.floor(milliseconds);
 		var milliseconds = offset % 1000;
 		offset = Math.floor(offset / 1000);
